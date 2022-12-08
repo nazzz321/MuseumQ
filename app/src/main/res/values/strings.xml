@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">От(к)рой Хакасию</string>
+    <string name="MainTitle">ОТ(К)РОЙ \nХАКАСИЮ</string>
+    <string name="Default">Default Text</string>
+    <string name="MenuButtonStart"><font size="26">ЭКСКУРСИЯ</font>\n<font size="8">Пройдите по залу каменных изваяний</font></string>
+    <string name="MenuButtonCollection"><font size="26">МОЯ КОЛЛЕКЦИЯ</font>\n<font size="8">Соберите все артефакты</font></string>
+    <string name="MenuButtonBook"><font size="26">ЭНЦИКЛОПЕДИЯ</font>\n<font size="8">Статьи об истории и культуре</font></string>
+    <string name="MenuButtonMap"><font size="26">КАРТА ХАКАСИИ</font>\n<font size="8">Очаги древней культуры</font></string>
+    <string name="MenuButtonSettings"><font size="26">НАСТРОЙКИ</font></string>
+    <string name="MenuButtonAbout"><font size="26">АВТОРЫ</font></string>
+
+</resources>

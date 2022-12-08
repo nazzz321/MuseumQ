@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#645C51"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainTitle"
+            android:textSize="45sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imageMenuBackground"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#DFC49B"
+            android:fontFamily="@font/mplusr1c_exbold"/>
+        <ImageView
+            android:id="@+id/imageMenuBackground"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/menubackground"
+            android:scaleType="fitStart"
+            android:contentDescription="Image"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonStart"
+                android:text="@string/MenuButtonStart"
+                style="@style/MainMenuButton"
+                android:layout_marginTop="0dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCollection"
+                style="@style/MainMenuButton"
+                android:text="@string/MenuButtonCollection" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonWiki"
+                android:text="@string/MenuButtonBook"
+                style="@style/MainMenuButton"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonMap"
+                style="@style/MainMenuButton"
+                android:text="@string/MenuButtonMap" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSettings"
+                android:text="@string/MenuButtonSettings"
+                style="@style/MainMenuButton"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAbout"
+                android:text="@string/MenuButtonAbout"
+                style="@style/MainMenuButton"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
