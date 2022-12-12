@@ -68,6 +68,7 @@
                 android:id="@+id/buttonAbout"
                 android:text="@string/MenuButtonAbout"
                 style="@style/MainMenuButton"/>
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

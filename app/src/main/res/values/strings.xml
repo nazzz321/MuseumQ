@@ -8,5 +8,7 @@
     <string name="MenuButtonMap"><font size="26">КАРТА ХАКАСИИ</font>\n<font size="8">Очаги древней культуры</font></string>
     <string name="MenuButtonSettings"><font size="26">НАСТРОЙКИ</font></string>
     <string name="MenuButtonAbout"><font size="26">АВТОРЫ</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

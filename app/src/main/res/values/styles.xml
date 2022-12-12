@@ -18,6 +18,7 @@
         <item name="backgroundTint">@color/black</item>
         <item name="android:textColor">#645C51</item>
         <item name="android:backgroundTint">#BFFFFFFF</item>
+        <item name="rippleColor">#00645C51</item>
         <item name="android:textSize">3pt</item>
         <item name="android:fontFamily">@font/mplusr1c_medium</item>
 
