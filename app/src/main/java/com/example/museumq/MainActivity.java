@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 i = 1;
                 }
                 else{
-                    Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                    Intent intent = new Intent(MainActivity.this, Menu.class);
                     startActivity(intent);
                 }
             }
