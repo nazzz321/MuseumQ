@@ -16,10 +16,6 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-
-
-
-
         MapView mapView = findViewById(R.id.imageViewMap);
         mapView.Init("hlf1_map.png");
         mapView.setOnTouchListener((view, event) -> {
