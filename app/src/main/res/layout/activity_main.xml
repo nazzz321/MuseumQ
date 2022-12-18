@@ -64,10 +64,11 @@
                 android:id="@+id/buttonSettings"
                 android:text="@string/MenuButtonSettings"
                 style="@style/MainMenuButton"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonAbout"
-                android:text="@string/MenuButtonAbout"
-                style="@style/MainMenuButton"/>
+                style="@style/MainMenuButton"
+                android:text="@string/MenuButtonAbout" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
