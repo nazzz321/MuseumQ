@@ -6,31 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="center"
-        app:srcCompat="@drawable/splashscreen" />
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="70dp"
-            android:fontFamily="@font/mplusr1c_exbold"
-            android:shadowColor="#FFEED4"
-            android:text="ОТ(К)РОЙ ХАКАСИЮ"
-            android:textColor="#FFEED4"
-            android:textColorHighlight="#FFEED4"
-            android:textColorHint="#FFEED4"
-            android:textSize="35sp" />
-    </LinearLayout>
+            android:scaleType="center"
+            app:srcCompat="@drawable/splashscreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/mplusr1c_exbold"
+                android:shadowColor="#FFEED4"
+                android:text="ОТ(К)РОЙ ХАКАСИЮ"
+                android:textColor="#FFEED4"
+                android:textColorHighlight="#FFEED4"
+                android:textColorHint="#FFEED4"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                app:srcCompat="@drawable/loading_circle" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
