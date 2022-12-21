@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE3D6"
+    tools:context=".Collection">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ButtBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="#EAE3D6"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/baseline_west_black_36" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/mplusr1c_exbold"
+            android:gravity="center"
+            android:text="Моя Коллекция"
+            android:textColor="#645C51"
+            android:textColorHint="#FF9800"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/lichina"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#645C51"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_2_tryokhchastnaya_lichina_v_1" />
+
+        <ImageButton
+            android:id="@+id/oleni"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#645C51"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_11_oleni_blyakhi_i_koltso_s_litsom_cheloveka" />
+
+        <ImageButton
+            android:id="@+id/Boyarsk"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#645C51"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_10_boyarskaya_pisanitsa" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,9 @@
             android:id="@+id/textBold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
             android:gravity="center"
             android:text="Откройте древнюю Хакасию, как настоящие археологи"
             android:textColor="#000000"
@@ -37,11 +39,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:fontFamily="@font/mplusr1c_bold"
             android:gravity="center"
             android:paddingLeft="80dp"
             android:paddingRight="80dp"
-            android:text="Отправляйтесь в экспедицию  и разгадайте, что хранят древние каменные изваяния"
-            android:textSize="17sp" />
+            android:text="Отправляйтесь в экспедицию и разгадайте, что хранят древние каменные изваяния"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/OnBoardingButton"
