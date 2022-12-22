@@ -9,12 +9,12 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">70dp</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_marginLeft">15dp</item>
         <item name="android:layout_marginRight">15dp</item>
 
 
-        <item name="cornerRadius">25dp</item>
+        <item name="cornerRadius">15dp</item>
         <item name="backgroundTint">@color/black</item>
         <item name="android:textColor">#645C51</item>
         <item name="android:backgroundTint">#BFFFFFFF</item>
@@ -29,23 +29,20 @@
 
     </style>
 
-    <style name="OrangeButton" parent="Widget.MaterialComponents.Button">
+    <style name="NextStepButton" parent="Widget.MaterialComponents.Button">
 
         <item name="android:text">@string/Default</item>
 
 
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">55dp</item>
-        <item name="android:minHeight">70dp</item>
-        <item name="android:layout_marginLeft">80dp</item>
-        <item name="android:layout_marginRight">80dp</item>
-        <item name="android:paddingLeft">70dp</item>
-        <item name="android:paddingRight">70dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
 
-        <item name="cornerRadius">30dp</item>
-        <item name="android:textColor">#645C51</item>
-        <item name="android:textSize">6pt</item>
-        <item name="android:backgroundTint">@color/orange</item>
+
+        <item name="cornerRadius">100dp</item>
+        <item name="android:textColor">#EDB25A</item>
+        <item name="android:textSize">25pt</item>
+        <item name="fontFamily">@font/arrows</item>
+        <item name="android:backgroundTint">@color/white</item>
 
 
         <item name="android:stateListAnimator">@null</item>

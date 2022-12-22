@@ -8,7 +8,10 @@
     <string name="MenuButtonMap"><font size="26">КАРТА ХАКАСИИ</font>\n<font size="8">Очаги древней культуры</font></string>
     <string name="MenuButtonSettings"><font size="26">НАСТРОЙКИ</font></string>
     <string name="MenuButtonAbout"><font size="26">АВТОРЫ</font></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Pon">Понятно</string>
+    <string name="OnboardSubtitle1">Отправляйтесь в экспедицию \nи разгадайте, что хранят древние каменные изваяния</string>
+    <string name="OnboardSubtitle2">Вы пройдёте по маршруту, исследуете артефакты, услышите мифы древних хакасов и увидете, \nкак они жили</string>
+    <string name="OnboardTitle1">Откройте \nдревнюю Хакасию, \nкак настоящие археологи</string>
+    <string name="OnboardTitle2">Здесь ваш путеводитель \nпо музею и истории Хакасии</string>
+
+
 </resources>

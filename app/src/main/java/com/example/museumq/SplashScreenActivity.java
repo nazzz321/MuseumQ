@@ -9,7 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
     private final int SPLASH_DISPLAY_LENGHT = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,19 +18,8 @@ public class SplashScreen extends AppCompatActivity {
         ImageView image =findViewById(R.id.imageView3);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate);
         image.startAnimation(animation);
-        new Handler().postDelayed(new Runnable() {
-
-            @Override
-
-            public void run() {
-
-
-                Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
-
-                SplashScreen.this.startActivity(mainIntent);
-
-                SplashScreen.this.finish();
-                }
+        new Handler().postDelayed(() -> {
+            SplashScreenActivity.this.finish();
             }, SPLASH_DISPLAY_LENGHT);
 
     }

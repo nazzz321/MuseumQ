@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".OnboardActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="40dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-50dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/jungle"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageTitle"
+            android:layout_marginTop="30dp"
+            android:text="@string/OnboardTitle1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/srcsanspro_black"
+            android:textSize="22sp"
+            android:lineHeight="27dp"/>
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="30dp"
+            android:text="@string/OnboardSubtitle1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/srcsanspro_regular"
+            android:textSize="17sp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:lineHeight="19dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNext"
+            android:text="I"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            style="@style/NextStepButton"/>
+
+
+
+    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:src="@drawable/jungle" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textBold"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/OnboardTitle1"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TextIntroduce"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:fontFamily="@font/mplusr1c_bold"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="80dp"-->
+<!--                android:paddingRight="80dp"-->
+<!--                android:text="@string/OnboardTitle2"-->
+<!--                android:textSize="15sp" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/OnBoardingButton"-->
+<!--            style="@style/OrangeButton"-->
+<!--            android:text="→" />-->
+
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

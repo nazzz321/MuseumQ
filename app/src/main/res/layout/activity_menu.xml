@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".MenuActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -64,11 +64,6 @@
                 android:id="@+id/buttonSettings"
                 android:text="@string/MenuButtonSettings"
                 style="@style/MainMenuButton"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonAbout"
-                style="@style/MainMenuButton"
-                android:text="@string/MenuButtonAbout" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
