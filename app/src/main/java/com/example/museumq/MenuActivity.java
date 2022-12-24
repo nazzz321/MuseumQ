@@ -21,17 +21,6 @@ public class MenuActivity extends AppCompatActivity {
         settings = getSharedPreferences("Settings",0);
         settingsEditor = settings.edit();
 
-        Intent splashScreenActivity = new Intent(MenuActivity.this, SplashScreenActivity.class);
-        startActivity(splashScreenActivity);
-        if (settings.getInt("isFirstStart", -1) == -1){
-            settingsEditor.putInt("isFirstStart", 1);
-            settingsEditor.apply();
-            Intent onboardActivity = new Intent(this, OnboardActivity.class);
-            startActivity(onboardActivity);
-        }
-
-
-
         Button buttonStart = findViewById(R.id.buttonStart);
         Button buttonCollection = findViewById(R.id.buttonCollection);
         Button buttonEncyclopedia = findViewById(R.id.buttonWiki);
@@ -43,13 +32,15 @@ public class MenuActivity extends AppCompatActivity {
         });
 
         buttonCollection.setOnClickListener(view -> {
-            Intent collectionActivity = new Intent(MenuActivity.this, CollectionActivity.class);
-            startActivity(collectionActivity);
+                    Intent CollectionActivity = new Intent(MenuActivity.this, CollectionActivity.class);
+                    startActivity(CollectionActivity);
         });
+
         buttonEncyclopedia.setOnClickListener(view -> {
             Intent encyclopediaActivity = new Intent(MenuActivity.this, EncyclopediaActivity.class);
             startActivity(encyclopediaActivity);
         });
+
         buttonSettings.setOnClickListener(view -> {
             Intent settingActivity = new Intent(MenuActivity.this, SettingsActivity.class);
             startActivity(settingActivity);

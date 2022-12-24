@@ -5,77 +5,184 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EAE3D6"
-    tools:context=".Collection">
+    tools:context=".CollectionActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/ButtBack"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:background="#EAE3D6"
-            android:scaleType="fitStart"
-            app:srcCompat="@drawable/baseline_west_black_36" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#BF6A30"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            <ImageButton
+                android:id="@+id/BackCollection"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#BF6A30"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/orangeback" />
+
+            <TextView
+                android:id="@+id/TitleEncyclopedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/mplusr1c_exbold"
+                android:gravity="center"
+                android:text="Моя коллекция"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FF9800"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
-            android:layout_marginRight="50dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/mplusr1c_exbold"
-            android:gravity="center"
-            android:text="Моя Коллекция"
-            android:textColor="#645C51"
-            android:textColorHint="#FF9800"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:background="@drawable/layout_bg">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:background="#FFFFFF"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/lichina"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:backgroundTint="#645C51"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/_2_tryokhchastnaya_lichina_v_1" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/layout_bg">
 
-        <ImageButton
-            android:id="@+id/oleni"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:backgroundTint="#645C51"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/_11_oleni_blyakhi_i_koltso_s_litsom_cheloveka" />
+                    <ImageButton
+                        android:id="@+id/imageButton24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_bg"
+                        android:src="@drawable/boyarskayapisanitca" />
 
-        <ImageButton
-            android:id="@+id/Boyarsk"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:backgroundTint="#645C51"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/_10_boyarskaya_pisanitsa" />
+                    <ImageButton
+                        android:id="@+id/imageButton23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/ogl_vsadnik" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/_3lichina" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/shaman" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/bidjinskibaran" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/skifskie_kotli" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/bik" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/solarsymbol" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/imageButton30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/chaatas" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/chaatas" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:src="@drawable/tagarski_ohotnik" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

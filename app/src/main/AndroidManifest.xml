@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MuseumQ"
+
         tools:targetApi="31">
         <activity
             android:name=".SettingsActivity"
@@ -27,6 +28,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
         <activity
             android:name=".EncyclopediaActivity"
@@ -37,10 +39,15 @@
         </activity>
         <activity
             android:name=".CollectionActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MapActivity"
@@ -58,12 +65,10 @@
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:label="Preferences">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
     </application>
 

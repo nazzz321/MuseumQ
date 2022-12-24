@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
     tools:context=".SplashScreenActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,27 +24,39 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:fontFamily="@font/mplusr1c_exbold"
-                android:shadowColor="#FFEED4"
-                android:text="ОТ(К)РОЙ ХАКАСИЮ"
-                android:textColor="#FFEED4"
-                android:textColorHighlight="#FFEED4"
-                android:textColorHint="#FFEED4"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/loading_circle" />
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/mplusr1c_exbold"
+                android:gravity="center"
+                android:text="НАЧАЛО ХАКАСИИ"
+                android:textColor="#F4DDB9"
+                android:textSize="50sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-100dp">
+
+                <ImageView
+                    android:id="@+id/ellipse"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/ellipse" />
+
+                <ImageView
+                    android:id="@+id/Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/loading_circle" />
+            </FrameLayout>
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

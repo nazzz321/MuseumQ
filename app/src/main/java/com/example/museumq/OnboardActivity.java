@@ -19,18 +19,6 @@ public class OnboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_onboarding);
 
 
-        clickCount = 0;
-        Button buttonNext = findViewById(R.id.buttonNext);
-        TextView textViewTitle = findViewById(R.id.textViewTitle);
-        TextView textViewSubtitle = findViewById(R.id.textViewSubtitle);
-        buttonNext.setOnClickListener(view -> {
-            clickCount++;
-            if (clickCount == 1){
-                textViewTitle.setText(getResources().getString(R.string.OnboardTitle2));
-                textViewSubtitle.setText(getResources().getString(R.string.OnboardSubtitle2));
-            }
-            if (clickCount == 2)
-                finish();
-        });
+
     }
 }

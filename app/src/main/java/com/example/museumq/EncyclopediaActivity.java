@@ -12,7 +12,7 @@ public class EncyclopediaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encyclopedia);
-        ImageButton buttonBack = findViewById(R.id.ButtBack);
+        ImageButton buttonBack = findViewById(R.id.BackEncyclopedia);
         buttonBack.setOnClickListener(view -> {
             Intent intent = new Intent(EncyclopediaActivity.this, MenuActivity.class);
             startActivity(intent);

@@ -13,7 +13,7 @@ public class CollectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
 
-        ImageButton buttonBack = findViewById(R.id.ButtBack);
+        ImageButton buttonBack = findViewById(R.id.BackCollection);
         buttonBack.setOnClickListener(view -> {
             Intent intent = new Intent(CollectionActivity.this, MenuActivity.class);
             startActivity(intent);
