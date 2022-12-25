@@ -25,6 +25,8 @@ public class MenuActivity extends AppCompatActivity {
         Button buttonCollection = findViewById(R.id.buttonCollection);
         Button buttonEncyclopedia = findViewById(R.id.buttonWiki);
         Button buttonSettings = findViewById(R.id.buttonSettings);
+
+
         Log.d("CREATION", String.valueOf(buttonStart.getText()));
         buttonStart.setOnClickListener(view -> {
             Intent mapActivity = new Intent(MenuActivity.this, MapActivity.class);
