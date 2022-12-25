@@ -1,0 +1,25 @@
+package com.example.museumq;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class EncyclopediaArticle extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_encyclopedia_article);
+
+        TextView Title = findViewById(R.id.ArticleTitle);
+        TextView Article = findViewById(R.id.ArticleText);
+        TextView SubArticle = findViewById(R.id.SubTitleArticle);
+
+        Title.setText(getIntent().getStringExtra("Title"));
+        SubArticle.setText(getIntent().getStringExtra("SubArticle"));
+        Article.setText(getIntent().getStringExtra("Article"));
+
+
+    }
+}
