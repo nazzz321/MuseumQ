@@ -13,7 +13,7 @@ public class EncyclopediaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encyclopedia);
-        ImageButton buttonBack = findViewById(R.id.BackArticle);
+        ImageButton buttonBack = findViewById(R.id.BackEncyclopedia);
         Button Okunev = findViewById(R.id.OkunevCulture);
         Button Tagarskya = findViewById(R.id.TagarskyCulture);
 

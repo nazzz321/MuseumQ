@@ -53,7 +53,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/loading_circle" />
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="12dp"
+                    app:srcCompat="@drawable/circlelogo" />
             </FrameLayout>
         </LinearLayout>
 

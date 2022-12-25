@@ -20,32 +20,19 @@
             android:backgroundTint="#59B1A6"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/BackArticle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="#EAE3D6"
-                android:backgroundTint="#59B1A6"
-                android:scaleType="centerInside"
-                android:src="@drawable/greenback" />
-
 
             <TextView
                 android:id="@+id/TitleArticle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/mplusr1c_exbold"
                 android:gravity="center"
                 android:textColor="#645C51"
                 android:textColorHint="#FF9800"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
         </LinearLayout>

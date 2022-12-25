@@ -63,7 +63,7 @@
                     android:background="@drawable/layout_bg">
 
                     <ImageButton
-                        android:id="@+id/imageButton24"
+                        android:id="@+id/BoyarskayaButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -81,7 +81,7 @@
                         android:src="@drawable/ogl_vsadnik" />
 
                     <ImageButton
-                        android:id="@+id/imageButton25"
+                        android:id="@+id/TrehLichina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -184,6 +184,38 @@
                         android:src="@drawable/chaatas" />
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/solncelikoe_bojestvo" />
+
+                    <ImageButton
+                        android:id="@+id/OleniBlyahiButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="#EAE3D6"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/olenii_blyahi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
 
             </LinearLayout>
         </ScrollView>
