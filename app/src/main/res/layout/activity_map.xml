@@ -1,29 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapActivity"
     android:background="@color/black">
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <com.example.museumq.MapView
+        android:id="@+id/imageViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/map"
+        android:background="#B8A286"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <com.example.museumq.MapView
-            android:id="@+id/imageViewMap"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottomSheetInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/flayoutroundc"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_hideable="true"
+        app:behavior_fitToContents="false"
+        app:behavior_peekHeight="100dp">
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clickable="true"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@drawable/map2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="start|top"
+                    android:text="Добрые личины"
+                    android:fontFamily="@font/mplusr1c_black"
+                    android:textSize="35sp"/>
+                <TextView
+                    android:id="@+id/textViewSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textViewTitle"
+                    android:layout_below="@+id/textViewTitle"
+                    android:text="Новосибирск, 2022,\nИванов Иван"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignLeft="@+id/textViewSubtitle"
+                    android:layout_below="@id/textViewSubtitle"
+                    app:cardCornerRadius="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/srcsanspro_regular"
+                        android:text="Некоторое, очень интересное описание экспоната"/>
+                </androidx.cardview.widget.CardView>
 
-    </ScrollView>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
