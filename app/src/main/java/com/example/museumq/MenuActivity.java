@@ -25,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
         Button buttonCollection = findViewById(R.id.buttonCollection);
         Button buttonEncyclopedia = findViewById(R.id.buttonWiki);
         Button buttonSettings = findViewById(R.id.buttonSettings);
+        Button buttonMapHakasi = findViewById(R.id.buttonMap);
 
 
         Log.d("CREATION", String.valueOf(buttonStart.getText()));
@@ -43,9 +44,14 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(encyclopediaActivity);
         });
 
-        buttonSettings.setOnClickListener(view -> {
+        /*buttonSettings.setOnClickListener(view -> {
             Intent settingActivity = new Intent(MenuActivity.this, SettingsActivity.class);
             startActivity(settingActivity);
+        });*/
+
+        buttonMapHakasi.setOnClickListener(view -> {
+            Intent intent = new Intent(MenuActivity.this, MapOfHakasia.class);
+            startActivity(intent);
         });
 
     }

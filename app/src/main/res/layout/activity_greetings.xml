@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Greetings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAE3D6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#605B53" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mplusr1c_exbold"
+                    android:gravity="center"
+                    android:text="Ваш путеводитель  по музею и истории Хакасии"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mplusr1c_bold"
+                    android:text="Хакасию считают родиной сибирской археологии. Республика хранит большое археологическое наследие разных эпох. От каменных орудий древних людей до средневековых городских построек.  И сейчас студенты-археологи  и геологи отправляются на полевую практику именно сюда, чтобы отыскать след древних хакасов,  их предков и соседей.  Не каждому исследователю открываются исторические тайны.  На многих раскопках не получается найти для науки ничего ценного.  Но исследовательский интерес, знания о культурном богатстве и разнообразии этих мест и особая романтика работы в поле всё же зовут археологов в Хакасию.   Сейчас мы отправимся в путешествие, чтобы открыть для себя древнюю Хакасию. Для этого нам предстоит разгадать символы  и знаки, которые таят каменные изваяния коллекции музея. "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="#EAE3D6"
+                    app:srcCompat="@drawable/buttonnext" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

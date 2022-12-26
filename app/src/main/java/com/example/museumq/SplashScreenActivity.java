@@ -20,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate);
         image.startAnimation(animation);
         new Handler().postDelayed(() -> {
-            Intent mainIntent = new Intent(SplashScreenActivity.this, MenuActivity.class);
+            Intent mainIntent = new Intent(SplashScreenActivity.this, Greetings.class);
             SplashScreenActivity.this.startActivity(mainIntent);
             SplashScreenActivity.this.finish();
             }, SPLASH_DISPLAY_LENGHT);

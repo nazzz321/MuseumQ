@@ -41,6 +41,7 @@ public class PageExponat extends AppCompatActivity {
             String temp = getIntent().getExtras().get("PictureMap").toString();
             Intent intent = new Intent(PageExponat.this , MapOfExponat.class);
             intent.putExtra("Picture",temp);
+            intent.putExtra("title",getIntent().getStringExtra("Title"));
             startActivity(intent);
         });
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
     tools:context=".PageExponat">
 
     <LinearLayout
@@ -13,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="320dp"
             android:background="#695D55"
             android:backgroundTint="#695D55"
             android:orientation="vertical">
@@ -21,15 +22,15 @@
             <ImageView
                 android:id="@+id/ExponatImage"
                 android:layout_width="wrap_content"
-                android:layout_height="250dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:scaleType="fitCenter" />
+                android:scaleType="centerCrop" />
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="-15dp"
             android:background="#EAE3D6">
 
             <LinearLayout
@@ -64,14 +65,17 @@
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/mediaplayer" />
 
                     <TextView
                         android:id="@+id/FirstBlockText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:fontFamily="@font/mplusr1c_bold"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:text="TextView" />
 
                     <ImageButton
@@ -105,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="142dp"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="-45dp"
+                    android:layout_marginTop="-35dp"
                     android:layout_marginRight="25dp"
                     android:background="#EAE3D6"
                     android:scaleType="centerInside"
@@ -113,10 +117,12 @@
 
                 <Button
                     android:id="@+id/ContinueExcursion"
-                    style="@style/EncyclopediaButton"
+                    style="@style/NextStepButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="-5dp"
+                    android:layout_marginRight="25dp"
                     android:backgroundTint="#EDB25A"
                     android:fontFamily="@font/mplusr1c_bold"
                     android:text="Продолжить экскурсию "

@@ -61,7 +61,6 @@
                     android:layout_marginRight="10dp"
                     android:background="#FFFFFF"
                     android:fontFamily="@font/mplusr1c_bold"
-                    android:gravity="center"
                     android:text="TextView"
                     android:textAlignment="textStart"
                     android:textSize="15sp" />

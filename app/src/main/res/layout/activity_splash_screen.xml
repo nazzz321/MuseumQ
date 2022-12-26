@@ -27,12 +27,12 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="100dp"
                 android:fontFamily="@font/mplusr1c_exbold"
                 android:gravity="center"
-                android:text="НАЧАЛО ХАКАСИИ"
+                android:text="ХАКАСИЯ.НАЧАЛО"
                 android:textColor="#F4DDB9"
-                android:textSize="50sp" />
+                android:textSize="32sp" />
 
             <FrameLayout
                 android:layout_width="match_parent"

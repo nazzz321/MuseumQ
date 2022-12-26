@@ -13,14 +13,14 @@
         >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/mplusr1c_exbold"
             android:text="@string/app_name"
             android:textColor="#DFC49B"
-            android:textSize="40sp"
+            android:textSize="35sp"
             app:layout_constraintLeft_toRightOf="@id/imageMenuBackground"
             app:layout_constraintTop_toTopOf="parent" />
 

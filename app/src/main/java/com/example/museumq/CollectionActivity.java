@@ -17,6 +17,7 @@ public class CollectionActivity extends AppCompatActivity {
         ImageButton Treh_lichinaButton = findViewById(R.id.TrehLichina);
         ImageButton BoyarskayaButton = findViewById(R.id.BoyarskayaButton);
         ImageButton Olenii_blyahi = findViewById(R.id.OleniBlyahiButton);
+        ImageButton Ohothik = findViewById(R.id.Ohotnik);
 
         buttonBack.setOnClickListener(view -> {
             Intent intent = new Intent(CollectionActivity.this, MenuActivity.class);
@@ -53,9 +54,15 @@ public class CollectionActivity extends AppCompatActivity {
             intent.putExtra("Title", "Оленьи Бляхи");
             intent.putExtra("SubArticle", "");
             intent.putExtra("ArticleFirstBlock",getResources().getString(R.string.olenii_1block));
-            intent.putExtra("Picture",R.drawable.olenii_blyahi_pic3);
-            //intent.putExtra("PictureMap",R.drawable.boyarskyamap);
+            intent.putExtra("Picture",R.drawable.blyahi_oleni);
+            intent.putExtra("PictureMap",R.drawable.boyarskyamap);
 
+            startActivity(intent);
+        });
+
+        Ohothik.setOnClickListener(view -> {
+            Intent intent = new Intent(CollectionActivity.this, MapOfExponat.class);
+            intent.putExtra("Picture",R.drawable.ohotniknew);
             startActivity(intent);
         });
 
