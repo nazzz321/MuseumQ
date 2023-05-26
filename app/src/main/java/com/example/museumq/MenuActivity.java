@@ -48,7 +48,12 @@ public class MenuActivity extends AppCompatActivity {
             Intent settingActivity = new Intent(MenuActivity.this, SettingsActivity.class);
             startActivity(settingActivity);
         });*/
+        buttonCollection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         buttonMapHakasi.setOnClickListener(view -> {
             Intent intent = new Intent(MenuActivity.this, MapOfHakasia.class);
             startActivity(intent);

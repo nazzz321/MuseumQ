@@ -34,7 +34,7 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
     int mode = NONE;
     float oldDist = 1f;
     float scale;
-
+    float realScale;
 
     public MapView(Context context) {
         super(context);
@@ -125,11 +125,23 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
                 }
                 else if (mode == ZOOM){
                     float newDist = spacing(event);
+                    matrix.getValues(matrixValue);
                     if (newDist > 5f)
                     {
-                        matrix.set(savedMatrix);
                         scale = newDist / oldDist;
-                        matrix.postScale(scale, scale, mid.x, mid.y);
+                        Log.d("STATE", Float.toString(scale));
+                        if (newDist < oldDist){
+                            if (matrixValue[Matrix.MSCALE_X] > 1) {
+                                matrix.set(savedMatrix);
+                                matrix.postScale(scale, scale, mid.x, mid.y);
+                            }
+                        }
+                        else {
+                            if (matrixValue[Matrix.MSCALE_X] < 5) {
+                                matrix.set(savedMatrix);
+                                matrix.postScale(scale, scale, mid.x, mid.y);
+                            }
+                        }
                     }
                 }
                 break;

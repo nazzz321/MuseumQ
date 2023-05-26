@@ -54,13 +54,26 @@
                     android:layout_alignLeft="@+id/textViewTitle"
                     android:layout_below="@+id/textViewTitle"
                     android:text="Новосибирск, 2022,\nИванов Иван"/>
+                <ImageView
+                    android:id="@+id/imageViewExpo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/white"
+                    android:src="@drawable/_2_tryokhchastnaya_lichina_v_1"
+                    android:scaleType="centerInside"
+                    android:layout_below="@id/textViewSubtitle"
+                    />
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewDesc"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_marginRight="25dp"
                     android:layout_marginTop="15dp"
                     android:layout_alignLeft="@+id/textViewSubtitle"
-                    android:layout_below="@id/textViewSubtitle"
+                    android:layout_below="@id/imageViewExpo"
                     app:cardCornerRadius="15dp">
                     <TextView
                         android:layout_width="match_parent"
